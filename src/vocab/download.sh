@@ -1,0 +1,1 @@
+wget https://drive.google.com/uc\?export\=download\&id\=1aOjZpag0Rj-XG0e1DdPm9x0KGfXgCIGF -O vocab.json

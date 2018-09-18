@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102190693-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-102190693-1');
+    </script>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+        integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Image Captioning</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/caption-it/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="/caption-it/static/vendor/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/caption-it/static/vendor/simple-line-icons/css/simple-line-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="/caption-it/static/device-mockups/device-mockups.css">
+
+    <!-- Custom styles for this template -->
+    <link href="/caption-it/static/css/new-age.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">Caption It</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="/neural-style">Try Neural Style App</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#features">How it works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contact">Ömer Kırbıyık</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="masthead">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-lg-7 my-auto">
+                    <div id="loading" style="text-align: center">
+                        <h6>Warning: This web app is experimental and still in development. Processing in neural network takes
+                            few seconds due to the limited computational capacity. </h6>
+                        <div id="loading-gif"></div>
+                        <p>Loading...</p>
+
+                    </div>
+                    <div class="header-content mx-auto" id="content">
+                        <h1 class="mb-5">Let your computer say what happens in the image.</h1>
+                        <h3>Upload Image</h3>
+                        <form method=post enctype=multipart/form-data>
+                            <input type=file class="btn btn-outline btn-xl" name=content-file>
+                            <p></p>
+                            <input type=submit class="btn btn-outline btn-xl" data-loading-text="Loading..." value="Upload" onclick="loading();">
+
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-5 my-auto ">
+                    <div class="device-container ">
+                        <div class="device-mockup iphone6_plus black">
+                            <div class="device ">
+                                <div class="screen ">
+                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                                    <!-- <img src="/caption-it/static/img/demo-screen-1.gif " class="img-fluid " alt=" "> -->
+                                    <video controls="controls" autoplay muted class="img-fluid" width="404" height="720">
+                                        <source src="/caption-it/static/img/demo.mp4">
+                                    </video>
+                                </div>
+                                <div class="button ">
+                                    <!-- You can hook the "home button " to some JavaScript events or just remove it -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-heading text-center">
+                <!-- <h2>Unlimited Features, Unlimited Fun</h2> -->
+                <p class="text-muted">This project is an implementation of the paper below.</p>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 my-auto">
+                    <img src="/caption-it/static/img/paper.png" style="max-width: 100%;">
+                </div>
+                <div class="col-lg-6 my-auto">
+                    <div class="container-fluid">
+                        <a target=_blank href="https://arxiv.org/pdf/1411.4555.pdf">
+                            <h3>Show and Tell: A Neural Image Caption Generator</h3>
+                            <p class="text-muted">Oriol Vinyals, Alexander Toshev, Samy Bengio, Dumitru Erhan</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="contact bg-primary " id="contact">
+        <div class="container ">
+            <h2>Made with
+                <i class="fa fa-heart "></i>
+                by Ömer Kırbıyık
+            </h2>
+            <ul class="list-inline list-social ">
+                <li class="list-inline-item social-twitter ">
+                    <a target=_blank href="http://twitter.com/omerkirbiyik ">
+                        <i class="fa fa-twitter "></i>
+                    </a>
+                </li>
+                <li class="list-inline-item social-github ">
+                    <a target=_blank href="https://github.com/kirbiyik ">
+                        <i class="fa fa-github-square "></i>
+                    </a>
+                </li>
+                <li class="list-inline-item social-facebook ">
+                    <a target=_blank href="https://www.linkedin.com/in/kirbiyik/">
+                        <i class="fa fa-linkedin "></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container ">
+            <p>&copy; Kirbiyik 2018. Ain't No Rights Reserved.</p>
+            <!-- <ul class="list-inline ">
+                    <li class="list-inline-item ">
+                        <a href="# ">Privacy</a>
+                    </li>
+                    <li class="list-inline-item ">
+                        <a href="# ">Terms</a>
+                    </li>
+                    <li class="list-inline-item ">
+                        <a href="# ">FAQ</a>
+                    </li>
+                </ul> -->
+        </div>
+    </footer>
+
+    
+    <!-- Bootstrap core JavaScript -->
+    <script src="/caption-it/static/vendor/jquery/jquery.min.js "></script>
+    <script src="/caption-it/static/vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/caption-it/static/vendor/jquery-easing/jquery.easing.min.js "></script>
+    
+    <!-- Custom scripts for this template -->
+    <script src="/caption-it/static/js/new-age.min.js "></script>
+
+    <script type="text/javascript">// <![CDATA[
+        function loading() {
+            $("#loading").show();
+            $("#loading-gif").show();
+            $("#content").hide();
+        }
+    // ]]></script>
+    
+</body>
+
+
+</html>

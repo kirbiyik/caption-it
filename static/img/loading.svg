@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" preserveAspectRatio="xMidYMid" style=""><rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="none" stroke="none"/><g class="currentLayer" style=""><title>Layer 1</title><circle cx="11" cy="55.6731" ng-attr-r="{{config.radius}}" fill="#ffffff" r="5" id="svg_1" class="" fill-opacity="1">
+  <animate attributeName="cy" values="30;70;30" times="0;0.5;1" dur="1s" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" begin="0s" repeatCount="indefinite"/>
+</circle><circle cx="22" cy="37.4889" ng-attr-r="{{config.radius}}" fill="#e841e8" r="5" id="svg_2" class="" fill-opacity="1">
+  <animate attributeName="cy" values="30;70;30" times="0;0.5;1" dur="1s" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" begin="-0.125s" repeatCount="indefinite"/>
+</circle><circle cx="33" cy="30.2944" ng-attr-r="{{config.radius}}" fill="#f8b26a" r="5" id="svg_3" class="">
+  <animate attributeName="cy" values="30;70;30" times="0;0.5;1" dur="1s" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" begin="-0.25s" repeatCount="indefinite"/>
+</circle><circle cx="44" cy="31.9382" ng-attr-r="{{config.radius}}" fill="#0bd50b" r="5" id="svg_4" class="" fill-opacity="1">
+  <animate attributeName="cy" values="30;70;30" times="0;0.5;1" dur="1s" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" begin="-0.375s" repeatCount="indefinite"/>
+</circle><circle cx="55" cy="44.3269" ng-attr-r="{{config.radius}}" fill="#ffffff" r="5" id="svg_5" class="" fill-opacity="1">
+  <animate attributeName="cy" values="30;70;30" times="0;0.5;1" dur="1s" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" begin="-0.5s" repeatCount="indefinite"/>
+</circle><circle cx="65.4475" cy="62.5111" ng-attr-r="{{config.radius}}" fill="#f47e60" r="5" id="svg_6" class="">
+  <animate attributeName="cy" values="30;70;30" times="0;0.5;1" dur="1s" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" begin="-0.625s" repeatCount="indefinite"/>
+</circle><circle cx="77" cy="69.7056" ng-attr-r="{{config.radius}}" fill="#f8b26a" r="5" id="svg_7" class="">
+  <animate attributeName="cy" values="30;70;30" times="0;0.5;1" dur="1s" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" begin="-0.75s" repeatCount="indefinite"/>
+</circle><circle cx="88" cy="68.0618" ng-attr-r="{{config.radius}}" fill="#e8e841" r="5" id="svg_8" class="" fill-opacity="1">
+  <animate attributeName="cy" values="30;70;30" times="0;0.5;1" dur="1s" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" begin="-0.875s" repeatCount="indefinite"/>
+</circle></g></svg>
