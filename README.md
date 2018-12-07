@@ -6,6 +6,8 @@
  <img src="./static/img/demo.png" alt="Drawing", width=60%>
 </p>
 
+This project is the implementation of the paper [_Show and Tell: A Neural Image Caption Generator_](https://arxiv.org/abs/1411.4555)
+
 Please visit below to see deployed web app.
 
 http://omerkirbiyik.com/caption-it
