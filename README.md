@@ -1,4 +1,5 @@
 # caption-it
+*NOTE: Deployment of ML models has been evolved a lot. At the time this projects is created, there were no(or very little) guidelines for deploying a Pytorch model properly. The methods might be outdated. Use this project only conceptually.*
 
 ## Image Captioning Web Application
 
